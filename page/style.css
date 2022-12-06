@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+
+* {
+    font-family: "Ubuntu", sans-serif;
+}
+
+body {
+    background: rgb(36, 36, 36);
+    padding: 50px;
+    color: white;
+}
+
+input {
+    font-size: 14px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    outline-color: rgb(84 105 212 / 0.5);
+    background-color: rgb(255, 255, 255);
+}
+
+.input {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: start;
+}
+
+.formMain p {
+    font-size: 30px;
+    margin: 0;
+    padding: 10px;
+}
+
+button {
+    font-size: 15px;
+    padding: 10px;
+    background-color: rgb(53, 53, 255);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#AddDataByText-warning {
+    background: #f73c3c;
+    padding: 15px;
+    border-radius: 5px;
+    display: none;
+}
+
+
+/* COLOR */
+.clr-danger{
+    background-color: #96242f;
+}
+.clr-secondary{
+    background-color: #585f63;
+}
+.clr-success{
+    background-color: #146c43;
+}

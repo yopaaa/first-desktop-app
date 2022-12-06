@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>hello</title>
+  </head>
+
+  <body>
+    <h1>welcome to my first desktop application</h1>
+    <input type="text" id="link" name="link" />
+    <button onclick="myFunc()">open link</button>
+    <button onclick="login()">Login now</button>
+
+    <script>
+      function myFunc() {
+        const link = document.querySelector("#link").value;
+        // document.querySelector('.test').innerHTML = link
+        window.location.replace(link);
+      }
+
+      const ipc = window.require("electron").ipcRenderer;
+
+      function login() {
+        ipc.send("login-page");
+      }
+    </script>
+  </body>
+</html>
